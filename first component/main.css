@@ -1,0 +1,100 @@
+body {
+    width: 100vw;
+    margin: 0; /* Reset any default margin */
+}
+
+.main {
+    background-color: rgb(27, 35, 137);
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfXZPl5S1r7SZOZHMqyGwb_G1GNlHvGrjBw&s); */
+}
+
+.inner {
+    color: aliceblue;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-width: 350px;
+    text-align: center; /* Ensures text in inner div is centered */
+}
+
+.hi {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.wel {
+    font-size: large;
+}
+
+.wel h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+}
+
+.inner p {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.inner button {
+    padding: 1.5vw 1.7vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2vw; /* Convert font size to vw for better responsiveness */
+    font-weight: bold;
+
+}
+
+#b {
+    padding: 1vw 3vw;
+    background-color: rgb(255, 136, 0);
+    color: azure;
+}
+
+.btn {
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Media Query for small screens (max-width: 800px) */
+@media (max-width: 800px) {
+    .btn {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 3vw;  /* Adjust gap between buttons in column layout */
+    }
+
+    .inner button {
+        font-size: 3vw; /* Adjust button font size for small screens */
+        padding: 2.5vw 4vw; /* Adjust padding for better button size */
+    }
+
+    #b {
+    padding: 2vw 3vw;
+    /* background-color: rgb(255, 136, 0);
+    color: azure; */
+}
+
+    .wel h1 {
+        font-size: 40px;
+    }
+    .hi {
+    font-weight: bold;
+    font-size: 17px;
+}
+.inner p {
+    text-align: center;
+    font-size: 20px;
+    /* margin: 20px 0; */
+}
+}
