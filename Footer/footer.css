@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    height: 100%; /* Defines full-page height for body and html */
+}
+
+* {
+    box-sizing: border-box; /* Applies to all elements */
+}
+
+
+.hf p {
+color: rgb(59, 77, 178);
+text-align: center;
+font-weight: 400;
+font-size: xx-large;
+}
+
+.terms{
+    display: flex;
+    justify-items: center;
+    /* padding: 0 10vw; */
+    /* grid-template-columns: repeat(6, 1fr); */
+       gap: 30px; 
+    justify-content: center;
+    /* gap: -30px; */
+    /* flex-wrap: wrap; */
+}
+
+
+
+.items{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+
+
+
+.logos {
+    height: 45px;
+    /* background-color: rgb(31, 24, 17); */
+    width: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    max-width: 100%;   /* Ensures the image is responsive and fits within its container */
+    max-height: 100%;  /* Prevents stretching beyond container height */
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+}
+
+.items {
+    color: #777777;
+}
+
+.par{
+    text-align: center;
+
+}
+
+@media (max-width: 900px) {
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(1, 5fr); /* 2 columns for even smaller screens */
+        gap: 20px;
+    }
+}
