@@ -3,35 +3,37 @@
     height: 400px;
     background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: row;
 }
 
+
 .left {
-    position: relative;
-    float: left;
+    /* position: relative; */
+    /* float: left; */
     background-color:#1f319f ;
     justify-content: center;
-    width: 50%;
+    /* width: 50%; */
     flex-direction: column;
     justify-content: center;
     display: flex;
+    flex: 1;
     padding-left:50px ;
     padding-right: 20px;
     color: white;
     
 }
-.hh {
-    margin-top: ;
-}
+
 
 .right {
-    position: relative;
-    float: right;
+    /* position: relative; */
+    /* float: right; */
     display: flex;
     flex-direction: column;
     background-color: #000f69;
+    flex: 1;
     padding-left: 30px;
-    margin:px;
-    width: 50%;
+    /* margin:px; */
+    /* width: 50%; */
     color: white;
 }
 .rrii {
@@ -39,5 +41,13 @@
 }
 .cu {
     margin-top: 100px;
+}
+
+@media screen and (max-width:600px) {
+    .float {
+        display:flex;
+      flex-direction:column;
+      
+    }
 }
 
