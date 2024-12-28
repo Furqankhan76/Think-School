@@ -1,0 +1,43 @@
+.float {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.left {
+    position: relative;
+    float: left;
+    background-color:#1f319f ;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    padding-left:50px ;
+    padding-right: 20px;
+    color: white;
+    
+}
+.hh {
+    margin-top: ;
+}
+
+.right {
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    background-color: #000f69;
+    padding-left: 30px;
+    margin:px;
+    width: 50%;
+    color: white;
+}
+.rrii {
+    margin-top: 85px;
+}
+.cu {
+    margin-top: 100px;
+}
+
