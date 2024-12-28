@@ -1,0 +1,34 @@
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.imgg {
+    width: 130%;
+    display: flex;
+    gap: 2%;
+    padding-left: 20%;
+}
+
+
+.tee {
+    width: 200%;
+    padding-left: 40%;
+    display: flex;
+    font-size: 3vw;
+}
+
+.ss {
+    width: 70%;
+    display: flex;
+}
+
+.ee {
+    width: 70%;
+    display: flex;
+}
+
+.ff {
+    width: 70%;
+    display: flex;
+}
