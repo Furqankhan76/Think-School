@@ -1,16 +1,19 @@
 body {
-    width: 100vw;
     margin: 0; /* Reset any default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling caused by 100vw */
+}
+
+* {
+    box-sizing: border-box; /* Applies to all elements */
 }
 
 .main {
     background-color: rgb(27, 35, 137);
-    width: 100vw;
-    height: 500px;
+    width: 100%; /* Ensure the container takes full width */
+    padding: 10px 0;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfXZPl5S1r7SZOZHMqyGwb_G1GNlHvGrjBw&s); */
 }
 
 .inner {
@@ -18,10 +21,9 @@ body {
     width: 33%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     min-width: 350px;
-    text-align: center; /* Ensures text in inner div is centered */
+    text-align: center;
 }
 
 .hi {
@@ -51,7 +53,6 @@ body {
     border: none;
     font-size: 1.2vw; /* Convert font size to vw for better responsiveness */
     font-weight: bold;
-
 }
 
 #b {
@@ -80,21 +81,32 @@ body {
     }
 
     #b {
-    padding: 2vw 3vw;
-    /* background-color: rgb(255, 136, 0);
-    color: azure; */
-}
+        padding: 2vw 3vw;
+    }
 
     .wel h1 {
         font-size: 40px;
     }
     .hi {
-    font-weight: bold;
-    font-size: 17px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .inner p {
+        text-align: center;
+        font-size: 20px;
+    }
 }
-.inner p {
-    text-align: center;
-    font-size: 20px;
-    /* margin: 20px 0; */
+
+@media (max-width : 400px){
+    .inner p {
+        text-align: center;
+        font-size: 6vw;
+    }
 }
+
+@media (max-width: 400px){
+    .wel h1 {
+        text-align: center;
+        font-size: 8vw;
+    }
 }
