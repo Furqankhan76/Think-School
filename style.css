@@ -1,0 +1,643 @@
+/* .mainContainer {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* header styles */
+.headerz {
+    /* width: 100%; */
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.box1z {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    padding-left: 10px;
+    color: #1f319f;
+    font-size: 40px;
+}
+
+.box2z {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    width: 72%;
+    align-items: center;
+    font-size: 23px;
+
+}
+
+.homez {
+    background-color:  rgb(219, 219, 219);
+    color: #1f319f;
+    width: 70px;
+    height: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+    border: 2px;
+    border-radius: 4px;
+}
+
+.box3z {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonz {
+    display:flex;
+    justify-content: center;
+    color: #1f319f;
+    background-color: rgb(219, 219, 219);
+   align-items: center;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid;
+    border-color:  rgb(219, 219, 219);
+   
+
+}
+.imgz {
+    width: 40px;
+    height: 30px;
+    margin-top: 25px;
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .imgz {
+        display: block;
+        margin-right: 10px;
+    }
+    .box2z {
+        display: none;
+        justify-content: centre;
+        width: 400px;
+    }
+    .buttonz {
+        display: none;
+    }
+    .box1z {
+        width: 900px;
+    }
+    .box2z {
+        600px
+    }
+}
+
+
+   
+
+/* first component */
+.body {
+    margin: 0; /* Reset any default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling caused by 100vw */
+}
+
+* {
+    box-sizing: border-box; /* Applies to all elements */
+}
+
+.main {
+    background-color: rgb(27, 35, 137);
+    width: 100%; /* Ensure the container takes full width */
+    padding: 10px 0;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    color: aliceblue;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 350px;
+    text-align: center;
+}
+
+.hi {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.wel {
+    font-size: large;
+}
+
+.wel h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+}
+
+.inner p {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.inner button {
+    padding: 1.5vw 1.7vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2vw; /* Convert font size to vw for better responsiveness */
+    font-weight: bold;
+}
+
+#b {
+    padding: 1vw 3vw;
+    background-color: rgb(255, 136, 0);
+    color: azure;
+}
+
+.btn {
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Media Query for small screens (max-width: 800px) */
+@media (max-width: 800px) {
+    .btn {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 3vw;  /* Adjust gap between buttons in column layout */
+    }
+
+    .inner button {
+        font-size: 3vw; /* Adjust button font size for small screens */
+        padding: 2.5vw 4vw; /* Adjust padding for better button size */
+    }
+
+    #b {
+        padding: 2vw 3vw;
+    }
+
+    .wel h1 {
+        font-size: 40px;
+    }
+    .hi {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .inner p {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 400px){
+    .inner p {
+        text-align: center;
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 400px){
+    .wel h1 {
+        text-align: center;
+        font-size: 8vw;
+    }
+}
+
+/* company tags */
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.imgg {
+    width: 130%;
+    display: flex;
+    gap: 2%;
+    padding-left: 20%;
+}
+
+
+.tee {
+    width: 200%;
+    padding-left: 40%;
+    display: flex;
+    font-size: 2.7vw;
+}
+
+.ss {
+    width: 70%;
+    display: flex;
+}
+
+.ee {
+    width: 70%;
+    display: flex;
+}
+
+.ff {
+    width: 70%;
+    display: flex;
+}
+
+/*second component  */
+.mainbox{
+    /* width: 100vw; */
+    
+    /* background-color: aquamarine; */
+    /* height: 300px; */
+    /* flex-direction: row; */
+    display: flex;
+    padding: 3vw 8vw;
+    /* flex-wrap: wrap; */
+}
+p{
+    font-size: 18px;
+}
+span{
+    color: rgb(35, 50, 143);
+}
+
+.inners{
+    padding: 2vw 6vw;
+    line-height: 1.3;
+    font-weight: 500;
+    
+}
+#one {
+   border: 2px dashed blue;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   
+}
+#two {
+    background-color:rgb(239, 243, 254);
+    /* border: px; */
+     border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+}
+
+h1{
+    /* font-weight: 400; */
+    font-size: 23px;
+}
+
+@media (max-width: 800px){
+    .mainbox{
+        flex-wrap: wrap;
+    }
+    #one {
+   border: 2px dashed blue;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-bottom-left-radius: 0px;
+   
+}
+#two {
+    background-color:rgb(239, 243, 254);
+    /* border: px; */
+     border-top-right-radius: 0px;
+   border-bottom-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+}
+    
+}
+
+/* third component */
+body, html {
+    margin: 0;
+    height: 100%; /* Defines full-page height for body and html */
+}
+
+* {
+    box-sizing: border-box; /* Applies to all elements */
+}
+
+
+.maint{
+    width: 100%;
+    /* height: 400px; */
+    /* background-color: rgb(84, 134, 179); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secmain{
+    width: 85%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgb(240, 247, 255);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.sd{
+    height: 100%;
+    width: 50%;
+}
+
+#illust{
+    height: 100%;
+    width: 50%;
+}
+
+.pabu{
+/* background-color: aquamarine; */
+padding: 30px 60px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.illus{
+/* background-color: blue; */
+overflow: hidden;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ padding: 30px; 
+}
+
+.pabu p{
+    font-size: 18px;
+} 
+.pabu button{
+    padding: 13px;
+    border: none;
+    background-color: rgb(255, 118, 2);
+    color: azure;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+.illus img {
+    width: 60%; /* Makes the image stretch to the div's width */
+    height: 60%; /* Ensures the image covers the div's height */
+    object-fit:contain; 
+    
+    /* position: absolute; */
+   
+}
+
+@media (max-width : 700px){
+    /* .secmain {
+        flex-direction: column;
+    } */
+    .sd{
+    height: 50%;
+    width: 100%;
+}
+
+.pabu{
+/* background-color: aquamarine; */
+padding: 20px 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.pabu button{
+    padding: 13px;
+    border: none;
+    background-color: rgb(255, 118, 2);
+    color: azure;
+    font-size: 18px;
+    border-radius: 5px;
+}
+/* .pabu h2{
+font-size: x-large;
+} */
+
+.illus img {
+    width: 80%; /* Makes the image stretch to the div's width */
+    height: 80%; /* Ensures the image covers the div's height */
+    object-fit:contain;
+}
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .secmain {
+        /* flex-direction: column; */
+    }
+    .sd{
+    height: 50%;
+    width: 100%;
+}
+
+
+.pabu p{
+    font-size: 26px;
+} 
+.pabu{
+/* background-color: aquamarine; */
+padding: 20px 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.pabu button{
+    padding: 18px;
+    border: none;
+    background-color: rgb(255, 118, 2);
+    color: azure;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.illus img {
+    width: 60%; /* Makes the image stretch to the div's width */
+    height: 60%; /* Ensures the image covers the div's height */
+    object-fit:contain; 
+}
+}
+.mainbox{
+    margin: 40px 0;
+}
+
+
+@media (min-width: 800px) {
+.pabu h2{
+font-size: xx-large;
+}
+.pabu p{
+    font-size: 20px;
+} 
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .pabu h2{
+font-size: xx-large;
+}
+.pabu p{
+    font-size: 26px;
+} 
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .pabu h2{
+font-size: 5.5vw;
+}
+
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+.flex{
+    flex-wrap: wrap-reverse;
+}
+ 
+}
+
+/* 2div */
+.float {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left {
+    /* position: relative; */
+    /* float: left; */
+    background-color:#1f319f ;
+    justify-content: center;
+    /* width: 50%; */
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    padding-left:50px ;
+    padding-right: 20px;
+    color: white;
+    
+}
+
+
+.right {
+    /* position: relative; */
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
+    background-color: #000f69;
+    flex: 1;
+    padding-left: 30px;
+    /* margin:px; */
+    /* width: 50%; */
+    color: white;
+}
+.rrii {
+    margin-top: 85px;
+}
+.cu {
+    margin-top: 100px;
+}
+
+@media screen and (max-width:600px) {
+    .float {
+        display:flex;
+      flex-direction:column;
+      
+    }
+}
+
+
+
+/* footer */
+body, html {
+    margin: 0;
+    height: 100%; /* Defines full-page height for body and html */
+}
+
+* {
+    box-sizing: border-box; /* Applies to all elements */
+}
+
+
+.hf p {
+color: rgb(59, 77, 178);
+text-align: center;
+font-weight: 400;
+font-size: xx-large;
+}
+
+.terms{
+    display: flex;
+    justify-items: center;
+    /* padding: 0 10vw; */
+    /* grid-template-columns: repeat(6, 1fr); */
+       gap: 30px; 
+    justify-content: center;
+    /* gap: -30px; */
+    /* flex-wrap: wrap; */
+}
+
+
+
+.items{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+
+
+
+.logos {
+    height: 45px;
+    /* background-color: rgb(31, 24, 17); */
+    width: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    max-width: 100%;   /* Ensures the image is responsive and fits within its container */
+    max-height: 100%;  /* Prevents stretching beyond container height */
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+}
+
+.items {
+    color: #777777;
+}
+
+.par{
+    text-align: center;
+
+}
+
+@media (max-width: 900px) {
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(1, 5fr); /* 2 columns for even smaller screens */
+        gap: 20px;
+    }
+}
+

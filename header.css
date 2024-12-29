@@ -1,4 +1,4 @@
-.header {
+.headerz {
     /* width: 100%; */
     height: 80px;
     display: flex;
@@ -6,14 +6,14 @@
     margin-top: -18px;
 }
 
-.box1 {
+.box1z {
     display: flex;
     width: 22%;
     padding-left: 10px;
     color: #1f319f;
 }
 
-.box2 {
+.box2z {
     display: flex;
     flex-direction: row;
     gap: 3%;
@@ -23,7 +23,7 @@
 
 }
 
-.home {
+.homez {
     background-color:  rgb(219, 219, 219);
     color: #1f319f;
     width: 70px;
@@ -34,13 +34,13 @@
     border-radius: 4px;
 }
 
-.box3 {
+.box3z {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button {
+.buttonz {
     display:flex;
     justify-content: center;
     color: #1f319f;
@@ -53,7 +53,7 @@
    
 
 }
-.img {
+.imgz {
     width: 40px;
     height: 30px;
     margin-top: 25px;
@@ -61,22 +61,22 @@
 }
 
 @media screen and (max-width:500px) {
-    .img {
+    .imgz {
         display: block;
         margin-right: 10px;
     }
-    .box2 {
+    .box2z {
         display: none;
         justify-content: centre;
         width: 400px;
     }
-    .button {
+    .buttonz {
         display: none;
     }
-    .box1 {
+    .box1z {
         width: 900px;
     }
-    .box2 {
+    .box2z {
         600px
     }
 }
